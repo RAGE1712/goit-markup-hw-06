@@ -46,8 +46,8 @@ img {
 .container {
   width: 100%;
   max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 .list {
@@ -426,25 +426,17 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-container {
 
 /**----------------------- Section 2 Advantages ----------------*/
 .advantages {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .advantages-list {
   display: flex;
-  gap: 24px;
+  gap: 72px;
+  flex-wrap: wrap;
 }
 .advantages-item {
-  width: calc((100% - 72px) / 4);
 }
 .advantages-icon-box {
-  width: auto;
-  height: auto;
-  border-radius: 4px;
-  background: var(--light-mode-background);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8px;
-  padding: 24px 100px;
+  display: none;
 }
 
 .advantages-icon {
@@ -452,21 +444,26 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-container {
 .advantages-header {
   color: var(--headings-color);
   font-family: var(--primary-font);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.5;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  text-align: center;
+  text-transform: capitalize;
 }
 .advantages-description {
   color: var(--text-color);
   font-family: var(--primary-font);
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 /**--------------------- Section 3 What Are We Doing -----------------*/
 .works {
+  display: none;
   padding-bottom: 120px;
 }
 .works-list {
@@ -495,7 +492,7 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-container {
 /**--------------- Section 4 TEAM -------------*/
 .team {
   background-color: var(--light-mode-background);
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .team-header {
   color: var(--headings-color);
@@ -510,11 +507,12 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-container {
 }
 .team-list {
   display: flex;
-  gap: 24px;
+  gap: 72px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .team-card {
   background-color: var(--primary-background-color);
-  width: calc((100% - 72px) / 4);
   height: 428px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -573,10 +571,10 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-container {
   fill: var(--light-mode-background);
 }
 
-/**--------------- Section 5 Clients -------------*/
+/**--------------- Section 5 Customers -------------*/
 .customers {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .customers-header {
   color: var(--headings-color);
@@ -591,11 +589,12 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-container {
 }
 .customers-list {
   display: flex;
-  gap: 24px;
+  gap: 72px 16px;
+  flex-wrap: wrap;
 }
 
 .customers-item {
-  width: calc((100% - 24px * 5) / 6);
+  width: calc((100% - 16px) / 2);
   height: 88px;
 }
 .customers-icon-link {
@@ -628,21 +627,20 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-container {
 /**------------------ Footer ----------------------*/
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
 }
 .footer-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 72px;
 }
-.text-social-container {
-  display: flex;
-  align-items: baseline;
-  gap: 120px;
-}
+
 .text-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .motto {
   color: var(--light-mode-background);
@@ -650,7 +648,7 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-container {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 264px;
+  max-width: 268px;
 }
 .footer .logo-studio {
   color: var(--light-mode-background);
@@ -669,9 +667,10 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-container {
   margin-right: 0;
   padding: 0;
 }
-.socialmedia-conteiner {
+.socialmedia-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .socialmedia-header {
   color: var(--primary-background-color);
@@ -707,6 +706,9 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-container {
   fill: var(--light-mode-background);
 }
 .subscribe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .subscribe-header {
   color: #ffffff;
@@ -719,16 +721,19 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-container {
 }
 .subscribe-form {
   display: flex;
-  gap: 24px;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
 }
 
 .subscribe-input {
   display: block;
-  width: 264px;
+  width: 398px;
   height: 40px;
   background-color: transparent;
   border-radius: 4px;
-  border: 1px solid #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding-left: 16px;
   font-size: 12px;
@@ -738,7 +743,7 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-container {
   color: #ffffff;
 }
 .subscribe-input::placeholder {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .subscribe-button {

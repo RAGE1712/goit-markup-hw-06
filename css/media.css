@@ -2,6 +2,21 @@
   .container {
     max-width: 428px;
   }
+  .modal {
+    width: 392px;
+    height: 584px;
+  }
+  .mobile-address-phone {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header .navigation-list {
+    display: none;
+  }
+  .header .address {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -16,6 +31,14 @@
   .footer > .container {
     max-width: 588px;
   }
+  .hero-header {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+  }
+  .order-button {
+    margin-top: 36px;
+  }
   .advantages-list {
     gap: 72px 24px;
   }
@@ -28,7 +51,6 @@
   .team-list {
     gap: 64px 24px;
   }
-
   .customers-list {
     gap: 72px 24px;
   }
@@ -48,8 +70,45 @@
   .subscribe-form {
     flex-direction: row;
   }
+  .subscribe-button {
+    margin: 0;
+  }
   .footer-container {
     justify-content: flex-start;
+  }
+  .modal {
+    padding: 72px 24px 16px 24px;
+  }
+  .mobile-menu-close {
+    display: none;
+  }
+  .mobile-menu-open {
+    display: none;
+  }
+  .menu-container {
+    display: none;
+  }
+  .filter-list {
+    width: 597px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 64px;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .filter-button {
+    padding: 12px 24px;
+  }
+  .projects-list {
+    gap: 72px 24px;
+    flex-direction: row;
+  }
+  .projects-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .project-cover-wrap img {
+    width: 356px;
+    height: 300px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -67,7 +126,9 @@
   .footer > .container {
     max-width: 1158px;
   }
-
+  .order-button {
+    margin-top: 48px;
+  }
   .advantages {
     padding: 120px 0;
   }
@@ -127,5 +188,54 @@
   .socialmedia-container {
     margin-left: 120px;
     margin-right: 80px;
+  }
+  .subscribe-input {
+    border: 1px solid rgba(255, 255, 255);
+  }
+  .subscribe-input::placeholder {
+    color: rgba(255, 255, 255);
+  }
+  .motto {
+    width: 264px;
+  }
+  .modal {
+    width: 408px;
+    margin: 80px auto;
+    padding: 72px 24px 24px 24px;
+  }
+  .modal-input {
+    padding-left: 38px;
+  }
+  .logo {
+    margin-right: 76px;
+  }
+  .header-navigation {
+    margin-right: 332px;
+  }
+  .address-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .projects-list {
+    gap: 48px 24px;
+  }
+  .projects-item {
+    width: calc((100% - 48px) / 3);
+  }
+  .project-cover-wrap img {
+    width: 360px;
+    height: 300px;
+  }
+  .filter-list {
+    margin-bottom: 72px;
+  }
+  .filters {
+    padding-top: 100px;
+    padding-bottom: 120px;
   }
 }

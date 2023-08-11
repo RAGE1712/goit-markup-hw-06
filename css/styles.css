@@ -145,6 +145,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: auto;
 }
 .menu-container.is-open {
   transform: translateX(0);
@@ -533,9 +534,7 @@ img {
   fill: transparent;
   margin-right: 8px;
 }
-.checkbox-icon {
-  margin-right: 8px;
-}
+
 input[type="checkbox"]:checked + .checkbox-label .checkbox-container {
   background-color: var(--active-link-color);
   border: none;

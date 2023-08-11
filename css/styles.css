@@ -160,7 +160,7 @@ img {
   font-family: Roboto;
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.11; /* 111.111% */
+  line-height: 1.11;
   letter-spacing: 0.02em;
 }
 .mobile-current {
@@ -188,7 +188,7 @@ img {
   color: var(--primary-brand-color);
   font-size: 25px;
   font-weight: 700;
-  line-height: 1.11; /* 111.111% */
+  line-height: 1.11;
   letter-spacing: 0.02em;
   font-style: normal;
 }
@@ -196,7 +196,7 @@ img {
   color: var(--text-color);
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.2; /* 120% */
+  line-height: 1.2;
   letter-spacing: 0.02em;
   font-style: normal;
 }
@@ -503,7 +503,7 @@ img {
   color: var(--subtle-text-color);
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.17; /* 116.667% */
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--subtle-text-color);
 }
@@ -947,7 +947,6 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-container {
 .projects-item {
   border: 1px solid var(--accent-color);
   background: var(--primary-background-color);
-  /* width: calc((100% - 48px) / 3); */
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -972,7 +971,6 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-container {
   flex-wrap: wrap;
   flex-direction: column;
   gap: 48px;
-  /* row-gap: 48px; */
 }
 /*! ----------- animation -------- */
 .projects-cover {
